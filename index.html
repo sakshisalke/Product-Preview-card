@@ -2,8 +2,49 @@
 <html lang="en">
 <head>
     <title>Product-Preview</title>
+    <style>
+        .title{
+            text-align: center;
+            color: #400080;
+        }
+        .img-container{
+            display: block;
+            margin: 20px auto;
+            height: 430px;
+            width: 430px;
+            border-radius: 10px;
+            box-shadow: 0 0 17px 2px #acacac;
+            object-fit: cover;
+        }
+
+        .prod-img{
+            min-height: 80px;
+            width: 80px;
+            object-fit: cover;
+            margin: 10px;
+            box-shadow: 0 0 17px 2px #acacac;
+            border-radius: 10px;
+            border: #696767 .5px solid;
+            cursor: pointer;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Product-Preview</h1>
+    <h1 class="title">SweatShirt</h1>
+
+    <img src="./img/shirt2.jpg" alt="" class="img-container">
+
+    <div class="container">
+        <img src="./img/shirt1.jpeg" class="prod-img" onclick="changeImg('shirt1.jpeg')" alt="">
+        <img src="./img/shirt3.webp" class="prod-img" onclick="changeImg('shirt3.webp')" alt="">
+        <img src="./img/shirt4.jpg" class="prod-img" onclick="changeImg('shirt4.jpg')" alt="">
+        <img src="./img/shirt5.jpg" class="prod-img" onclick="changeImg('shirt5.jpg')" alt="">
+    </div>
+
+    
 </body>
 </html>

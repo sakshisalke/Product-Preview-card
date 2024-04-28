@@ -36,15 +36,20 @@
 <body>
     <h1 class="title">SweatShirt</h1>
 
-    <img src="./img/shirt2.jpg" alt="" class="img-container">
+    <img src="./img/shirt2.jpg" alt="" class="img-container" id="product-image">
 
     <div class="container">
-        <img src="./img/shirt1.jpeg" class="prod-img" onclick="changeImg('shirt1.jpeg')" alt="">
-        <img src="./img/shirt3.webp" class="prod-img" onclick="changeImg('shirt3.webp')" alt="">
-        <img src="./img/shirt4.jpg" class="prod-img" onclick="changeImg('shirt4.jpg')" alt="">
-        <img src="./img/shirt5.jpg" class="prod-img" onclick="changeImg('shirt5.jpg')" alt="">
+        <img src="./img/shirt1.webp" class="prod-img" onclick="changeImg('./img/shirt1.webp')" alt="">
+        <img src="./img/shirt3.webp" class="prod-img" onclick="changeImg('./img/shirt3.webp')" alt="">
+        <img src="./img/shirt4.jpg" class="prod-img" onclick="changeImg('./img/shirt4.jpg')" alt="">
+        <img src="./img/shirt5.jpg" class="prod-img" onclick="changeImg('./img/shirt5.jpg')" alt="">
     </div>
 
-    
+    <script>
+        function changeImg(imageName){
+            const prodImage= document.getElementById('product-image');
+            prodImage.src = imageName;
+        }
+    </script>
 </body>
 </html>
